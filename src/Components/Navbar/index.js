@@ -5,10 +5,10 @@ import { SwipeableDrawer } from "@mui/material";
 
 const Home = (props) => {
   return (
-    <div className="px-10 py-8 bg-blue-50">
-      <div className="flex flex-wrap justify-between items-center">
+    <div className="lg:px-36 md:px-12 sm:px-8 px-4 py-6 bg-blue-50">
+      <div className=" flex flex-wrap justify-between items-center">
         <img src={props.logo} alt="logo" />
-        <div className="hidden sm:block">
+        <div className="sm:block hidden">
           <ul className="flex flex-row">
             {props.navList.map((item) => (
               <li className="pb-4 px-4">
@@ -17,7 +17,7 @@ const Home = (props) => {
             ))}
           </ul>
         </div>
-        <div className="block sm:hidden">
+        <div className="sm:hidden block">
           <button onClick={props.toggleDrawerHandler}>
             <MenuIcon />
           </button>
