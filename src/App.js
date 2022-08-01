@@ -7,7 +7,7 @@ import PageNotFound from "./Pages/PageNotFound"
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home/>} />
+      <Route path="react-js/" element={<Home/>} />
       <Route path="carimobil" element={<CariMobil />} />
       <Route path="carimobil/:id" element={<CariMobil />} />
       <Route path="*" element={<PageNotFound />} />
