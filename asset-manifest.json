@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-js/static/css/main.44f2cb6d.css",
+    "main.js": "/react-js/static/js/main.c4bfa1d2.js",
+    "static/js/787.5a8089fc.chunk.js": "/react-js/static/js/787.5a8089fc.chunk.js",
+    "static/media/img_car.png": "/react-js/static/media/img_car.ffe77cc73822a065a73a.png",
+    "static/media/img_service.png": "/react-js/static/media/img_service.3a3db8c1608f427874ee.png",
+    "static/media/icon_instagram.svg": "/react-js/static/media/icon_instagram.07999307b127f0777e9d2f1edbbe58bb.svg",
+    "static/media/icon_twitter.svg": "/react-js/static/media/icon_twitter.a65bc559c6f931a92b3c2f5d1bd1f07b.svg",
+    "index.html": "/react-js/index.html",
+    "static/media/icon_mail.svg": "/react-js/static/media/icon_mail.6cf8260416ff536187113753ecf4266d.svg",
+    "static/media/icon_facebook.svg": "/react-js/static/media/icon_facebook.54543547315262530377a5bfebe0a189.svg",
+    "static/media/icon_twitch.svg": "/react-js/static/media/icon_twitch.f78c067b89e72e4fd29101d1a2925262.svg",
+    "main.44f2cb6d.css.map": "/react-js/static/css/main.44f2cb6d.css.map",
+    "main.c4bfa1d2.js.map": "/react-js/static/js/main.c4bfa1d2.js.map",
+    "787.5a8089fc.chunk.js.map": "/react-js/static/js/787.5a8089fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44f2cb6d.css",
+    "static/js/main.c4bfa1d2.js"
+  ]
+}
