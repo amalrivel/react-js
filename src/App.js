@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import * as React from "react";
 import Home from "./Pages/Home"
 import CariMobil from "./Pages/CariMobil"
+import PageNotFound from "./Pages/PageNotFound"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="carimobil" element={<CariMobil />} />
       <Route path="carimobil/:id" element={<CariMobil />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 }
