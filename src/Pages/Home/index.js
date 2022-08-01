@@ -6,9 +6,19 @@ import WhyUs from "../../Components/WhyUs";
 import Testimony from "../../Components/Testimony";
 import CTABanner from "../../Components/CTABanner";
 import FAQ from "../../Components/FAQ";
+import Footer from "../../Components/Footer";
+import Complete from "../../Assets/icon_complete.png";
+import Price from "../../Assets/icon_price.png";
+import Hrs from "../../Assets/icon_24hrs.png";
+import Professional from "../../Assets/icon_professional.png";
 import Logo from "../../Assets/logo.png";
 import Car from "../../Assets/img_car.png";
 import Service from "../../Assets/img_service.png";
+import Facebook from "../../Assets/icon_facebook.svg";
+import Mail from "../../Assets/icon_mail.svg";
+import Instagram from "../../Assets/icon_instagram.svg";
+import Twitch from "../../Assets/icon_twitch.svg";
+import Twitter from "../../Assets/icon_twitter.svg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -54,15 +64,51 @@ const Home = () => {
     OurService,
   };
 
+  // Why Us
+  const content = [
+    {
+      img: Complete,
+      name: "Mobil Lengkap",
+      desc: "Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat",
+    },
+    {
+      img: Price,
+      name: "Harga Murah",
+      desc: "Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain",
+    },
+    {
+      img: Hrs,
+      name: "Layanan 24 Jam",
+      desc: "Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu",
+    },
+    {
+      img: Professional,
+      name: "Sopir Profesional",
+      desc: "Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu",
+    },
+  ];
+
+  const propsWhyUs = { content };
+
+  // Footer
+  const facebook = Facebook;
+  const instagram = Instagram;
+  const mail = Mail;
+  const twitter = Twitter;
+  const twitch = Twitch;
+  const icon = [ facebook, instagram, mail, twitter, twitch ];
+  const propsFooter = { navList, logo, icon };
+
   return (
     <React.Fragment>
       <Navbar {...propsNavbar} />
       <Hero {...propsHero} />
       <OurServices {...propsOurService} />
-      <WhyUs />
+      <WhyUs {...propsWhyUs} />
       <Testimony />
       <CTABanner />
       <FAQ />
+      <Footer {...propsFooter} />
     </React.Fragment>
   );
 };

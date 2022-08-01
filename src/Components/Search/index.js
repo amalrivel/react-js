@@ -17,7 +17,8 @@ const Search = (props) => {
                   onChange={(event) => props.handleChange(event)}
                   name={item.name}
                   type="text"
-                  className="py-2 px-4 block w-full shadow-sm sm:text-sm border rounded-md"
+                  disabled={Object.keys(props.id).length !== 0 ? true : false}
+                  className="py-2 px-4 block w-full shadow-sm sm:text-sm border rounded-md disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
                 />
               </div>
             ) : (
@@ -27,10 +28,11 @@ const Search = (props) => {
                 </label>
                 <div class="relative">
                   <select
-                    className="appearance-none py-2 px-4 block w-full shadow-sm sm:text-sm border rounded-md pr-8"
+                    className="appearance-none py-2 px-4 block w-full shadow-sm sm:text-sm border rounded-md pr-8 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
                     name={item.name}
                     value={item.value}
                     onChange={(event) => props.handleChange(event)}
+                    disabled={Object.keys(props.id).length !== 0 ? true : false}
                   >
                     {item.option.map((item) => (
                       <option value={item.value}>{item.content}</option>
@@ -53,7 +55,8 @@ const Search = (props) => {
             <button
               type="submit"
               value="Submit"
-              className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 w-full shadow-sm sm:text-sm border rounded-md font-bold "
+              disabled={Object.keys(props.id).length !== 0 ? true : false}
+              className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 w-full shadow-sm sm:text-sm border rounded-md font-bold disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
             >
               Cari
             </button>

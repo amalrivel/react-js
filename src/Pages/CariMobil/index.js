@@ -3,11 +3,21 @@ import Navbar from "../../Components/Navbar";
 import Hero from "../../Components/Hero";
 import Search from "../../Components/Search";
 import CardResult from "../../Components/CardResult";
+import CarDetail from "../../Components/CarDetail";
 import Logo from "../../Assets/logo.png";
 import Car from "../../Assets/img_car.png";
+import Facebook from "../../Assets/icon_facebook.svg";
+import Mail from "../../Assets/icon_mail.svg";
+import Instagram from "../../Assets/icon_instagram.svg";
+import Twitch from "../../Assets/icon_twitch.svg";
+import Twitter from "../../Assets/icon_twitter.svg";
 import axios from "axios";
+import { useParams } from "react-router-dom";
+import Footer from "../../Components/Footer";
 
 const CariMobil = () => {
+  const id = useParams();
+
   // Navbar
   const logo = Logo;
   const navList = ["Our Services", "Why Us", "Testimonial", "FAQ"];
@@ -131,8 +141,9 @@ const CariMobil = () => {
       ],
     },
   ];
-  const propsSearch = { handleSubmit, handleChange, state, searchItem };
+  const propsSearch = { handleSubmit, handleChange, state, searchItem, id };
 
+  // Card Result
   const [result, setResult] = React.useState([]);
   const handleResult = () => {
     let result = data;
@@ -166,12 +177,37 @@ const CariMobil = () => {
   };
   const propsCardResult = { handleResult, result };
   
+  // Car Detail
+  const [spesificData, setSpesificData] = React.useState({});
+  React.useEffect(() => {
+    axios
+      .get(`https://bootcamp-rent-car.herokuapp.com/admin/car/${id.id}`)
+      .then((res) => setSpesificData(res.data))
+      .catch((err) => console.log(err));
+  }, [id.id]);
+
+  const propsCarDetail = { spesificData };
+
+  // Footer
+  const facebook = Facebook;
+  const instagram = Instagram;
+  const mail = Mail;
+  const twitter = Twitter;
+  const twitch = Twitch;
+  const icon = [ facebook, instagram, mail, twitter, twitch ];
+  const propsFooter = { navList, logo, icon };
+
   return (
     <React.Fragment>
       <Navbar {...propsNavbar} />
       <Hero {...propsHero} />
       <Search {...propsSearch} />
-      <CardResult {...propsCardResult} />
+      {Object.keys(id).length === 0 ? (
+        <CardResult {...propsCardResult} />
+      ) : (
+        <CarDetail {...propsCarDetail} />
+      )}
+      <Footer {...propsFooter} />
     </React.Fragment>
   );
 };

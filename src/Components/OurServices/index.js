@@ -2,7 +2,7 @@ import Check from "../../Assets/check.png";
 
 const OurServices = (props) => {
   return (
-    <div className="lg:px-36 md:px-12 sm:px-8 px-4 py-6">
+    <div className="lg:px-36 md:px-12 sm:px-8 px-4 py-6" id="Our Services">
       <div className="grid gap-4 md:grid-cols-2 grid-cols-1 grid-flow-row">
         <div className="flex items-center md:p-0 p-9">
           <img src={props.service} alt={props.service} />
