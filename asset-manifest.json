@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-js/static/css/main.36996680.css",
-    "main.js": "/react-js/static/js/main.417f6334.js",
+    "main.js": "/react-js/static/js/main.2db4d193.js",
     "static/js/787.5a8089fc.chunk.js": "/react-js/static/js/787.5a8089fc.chunk.js",
     "static/media/img_car.png": "/react-js/static/media/img_car.ffe77cc73822a065a73a.png",
     "static/media/img_service.png": "/react-js/static/media/img_service.3a3db8c1608f427874ee.png",
@@ -12,11 +12,11 @@
     "static/media/icon_facebook.svg": "/react-js/static/media/icon_facebook.54543547315262530377a5bfebe0a189.svg",
     "static/media/icon_twitch.svg": "/react-js/static/media/icon_twitch.f78c067b89e72e4fd29101d1a2925262.svg",
     "main.36996680.css.map": "/react-js/static/css/main.36996680.css.map",
-    "main.417f6334.js.map": "/react-js/static/js/main.417f6334.js.map",
+    "main.2db4d193.js.map": "/react-js/static/js/main.2db4d193.js.map",
     "787.5a8089fc.chunk.js.map": "/react-js/static/js/787.5a8089fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36996680.css",
-    "static/js/main.417f6334.js"
+    "static/js/main.2db4d193.js"
   ]
 }
