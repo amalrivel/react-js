@@ -163,9 +163,9 @@ const CariMobil = () => {
       state.harga === ""
         ? result
         : state.harga === "< Rp. 400.000"
-        ? result.filter((item) => item.price <= 400000)
+        ? result.filter((item) => item.price < 400000)
         : state.harga === "Rp. 400.000 - Rp. 600.000"
-        ? result.filter((item) => item.price > 400000 && item.price < 600000)
+        ? result.filter((item) => item.price >= 400000 && item.price <= 600000)
         : result.filter((item) => item.price > 600000);
     result =
       state.status === ""
