@@ -103,6 +103,7 @@ const Home = () => {
       ? setCurrentIndex(-100)
       : setCurrentIndex(currentIndex + 100);
   };
+  console.log(currentIndex);
 
   const propsTestimony = {handleOnNextClick, handleOnPrevClick, currentIndex}
 
