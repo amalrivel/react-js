@@ -55,7 +55,11 @@ const Testimony = (props) => {
           </button>
         </div>
       </div>
-      <div className="hidden translate-x-[100%] translate-x-[-100%] translate-x-[0]"></div>
+      <div className="hidden   translate-x-[0]">
+        <div className="hidden translate-x-[100%] ">
+          <div className="hidden  translate-x-[-100%]"></div>
+        </div>
+      </div>
     </div>
   );
 };
