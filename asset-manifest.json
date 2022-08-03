@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-js/static/css/main.a116169d.css",
-    "main.js": "/react-js/static/js/main.e0e9ed15.js",
+    "main.css": "/react-js/static/css/main.8726def1.css",
+    "main.js": "/react-js/static/js/main.87fddeb5.js",
     "static/js/787.5a8089fc.chunk.js": "/react-js/static/js/787.5a8089fc.chunk.js",
     "static/media/img_car.png": "/react-js/static/media/img_car.ffe77cc73822a065a73a.png",
     "static/media/img_service.png": "/react-js/static/media/img_service.3a3db8c1608f427874ee.png",
@@ -11,12 +11,12 @@
     "static/media/icon_mail.svg": "/react-js/static/media/icon_mail.6cf8260416ff536187113753ecf4266d.svg",
     "static/media/icon_facebook.svg": "/react-js/static/media/icon_facebook.54543547315262530377a5bfebe0a189.svg",
     "static/media/icon_twitch.svg": "/react-js/static/media/icon_twitch.f78c067b89e72e4fd29101d1a2925262.svg",
-    "main.a116169d.css.map": "/react-js/static/css/main.a116169d.css.map",
-    "main.e0e9ed15.js.map": "/react-js/static/js/main.e0e9ed15.js.map",
+    "main.8726def1.css.map": "/react-js/static/css/main.8726def1.css.map",
+    "main.87fddeb5.js.map": "/react-js/static/js/main.87fddeb5.js.map",
     "787.5a8089fc.chunk.js.map": "/react-js/static/js/787.5a8089fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a116169d.css",
-    "static/js/main.e0e9ed15.js"
+    "static/css/main.8726def1.css",
+    "static/js/main.87fddeb5.js"
   ]
 }
