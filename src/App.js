@@ -8,8 +8,8 @@ function App() {
   return (
     <Routes>
       <Route path="react-js/" element={<Home/>} />
-      <Route path="carimobil" element={<CariMobil />} />
-      <Route path="carimobil/:id" element={<CariMobil />} />
+      <Route path="react-js/carimobil" element={<CariMobil />} />
+      <Route path="react-js/carimobil/:id" element={<CariMobil />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

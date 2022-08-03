@@ -38,7 +38,7 @@ const Home = () => {
 
   // Hero
   const buttonMulaiSewa = (
-    <Link to={"/carimobil"}>
+    <Link to={"/react-js/carimobil"}>
       <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-44 my-2">
         Mulai Sewa Mobil
       </button>
@@ -90,6 +90,55 @@ const Home = () => {
 
   const propsWhyUs = { content };
 
+  // Testimony
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  const handleOnNextClick = () => {
+    currentIndex <= -100
+      ? setCurrentIndex(100)
+      : setCurrentIndex(currentIndex - 100);
+  };
+  const handleOnPrevClick = () => {
+    currentIndex >= 100
+      ? setCurrentIndex(-100)
+      : setCurrentIndex(currentIndex + 100);
+  };
+
+  const propsTestimony = {handleOnNextClick, handleOnPrevClick, currentIndex}
+
+  // FAQ
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
+  const FAQcontent = [
+    {
+      no: 1,
+      summary: "Apa saja syarat yang dibutuhkan?",
+    },
+    {
+      no: 2,
+      summary: "Berapa hari minimal sewa mobil lepas kunci?",
+    },
+    {
+      no: 3,
+      summary: "Berapa hari sebelumnya sabaiknya booking sewa mobil?",
+    },
+    {
+      no: 4,
+      summary: "Apakah Ada biaya antar-jemput?",
+    },
+    {
+      no: 5,
+      summary: "Bagaimana jika terjadi kecelakaan",
+    },
+  ];
+
+  const propsFAQ = { FAQcontent , expanded, handleChange};
+
+
   // Footer
   const facebook = Facebook;
   const instagram = Instagram;
@@ -105,9 +154,9 @@ const Home = () => {
       <Hero {...propsHero} />
       <OurServices {...propsOurService} />
       <WhyUs {...propsWhyUs} />
-      <Testimony />
+      <Testimony {...propsTestimony}/>
       <CTABanner />
-      <FAQ />
+      <FAQ {...propsFAQ}/>
       <Footer {...propsFooter} />
     </React.Fragment>
   );

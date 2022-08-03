@@ -8,7 +8,7 @@ const Home = (props) => {
   return (
     <div className="lg:px-36 md:px-12 sm:px-8 px-4 py-6 bg-blue-50">
       <div className=" flex flex-wrap justify-between items-center">
-        <Link to={`/`}><img src={props.logo} alt="logo" /></Link>
+        <Link to={`/react-js/`}><img src={props.logo} alt="logo" /></Link>
         <div className="sm:block hidden">
           <ul className="flex flex-row">
             {props.navList.map((item) => (

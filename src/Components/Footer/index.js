@@ -26,7 +26,7 @@ const Footer = (props) => {
         </div>
         <div className="md:col-span-2">
           <p className="my-2 font-bold">Copyright Binar 2022</p>
-          <Link to={`/`}><img src={props.logo} alt={props.logo} /></Link>
+          <Link to={`/react-js/`}><img src={props.logo} alt={props.logo} /></Link>
           
         </div>
       </div>
